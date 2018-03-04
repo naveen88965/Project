@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="naveen.android.com.project.MainActivity"
+    android:background="#f5eed7">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/spinner"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView" />
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/imv1"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/imv1"
+        android:layout_marginTop="143dp"
+        android:text="@string/source"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv1"
+        android:layout_alignRight="@+id/tv1"
+        android:layout_below="@+id/tv1"
+        android:layout_marginTop="45dp"
+        android:text="@string/dest"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="italic" />
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="52dp"
+        android:background="#f4e0f7"
+        android:text="@string/submit" />
+
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_above="@+id/tv2"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/pin" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/button2"
+        android:text="@string/by"
+        android:background="#79d8e9"/>
+
+    <ImageButton
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginLeft="70dp"
+        android:layout_alignTop="@+id/button"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/bus1"
+        android:id="@+id/imv1"/>
+    <ImageButton
+        android:id="@+id/imv2"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/map1"
+        android:layout_marginStart="300dp"
+        android:layout_marginLeft="40dp"
+        android:layout_alignBottom="@id/imv1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/tv2"
+        android:layout_alignRight="@+id/tv2"
+        android:layout_below="@+id/imv1"
+        android:text="@string/buses"
+        android:textStyle="italic" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/area_based"
+        android:textStyle="italic"
+        android:layout_below="@id/imv2"
+        android:layout_marginLeft="290dp"
+        android:id="@+id/textView2" />
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/imageButton"
+        android:layout_alignEnd="@+id/imv2"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignRight="@+id/imv2"
+        android:layout_alignStart="@+id/button" />
+
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button"
+        android:layout_alignLeft="@+id/button"
+        android:layout_alignStart="@+id/button"
+        android:layout_marginEnd="43dp"
+        android:layout_marginRight="43dp"/>
+
+</RelativeLayout>
